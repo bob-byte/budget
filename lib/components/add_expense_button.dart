@@ -1,0 +1,33 @@
+import 'package:budget/components/open_sans.dart';
+import 'package:budget/view_model.dart';
+import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+class AddExpenseButton extends HookConsumerWidget {
+  const AddExpenseButton({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ViewModel viewModelProvider = ref.watch(viewModel);
+
+    return SizedBox(
+      height: 45,
+      width: 160,
+      child: MaterialButton(
+        onPressed: () async {
+          await viewModelProvider.addExpense(context);
+        },
+        splashColor: Colors.grey,
+        color: Colors.black,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: Row(
+          mainAxisAlignment: .spaceEvenly,
+          children: [
+            Icon(Icons.add, color: Colors.white),
+            OpenSans(text: "Add Expense", size: 17, color: Colors.white),
+          ],
+        ),
+      ),
+    );
+  }
+}

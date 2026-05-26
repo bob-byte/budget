@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "budget (macOS)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceId": "macos"
+        },
+        {
+            "name": "budget (Linux)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceId": "linux"
+        },
+        {
+            "name": "budget (Windows)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceId": "windows"
+        },
+        {
+            "name": "budget (iOS)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "preLaunchTask": "Start iOS Simulator"
+        },
+        {
+            "name": "budget (Android)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "emulatorId": "Medium_Phone_API_36.1"
+        },
+        {
+            "name": "budget (Web)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceId": "chrome"
+        }
+    ]
+}

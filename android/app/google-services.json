@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "689930648007",
+    "project_id": "budget-app-1111",
+    "storage_bucket": "budget-app-1111.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689930648007:android:56d1fccdbb069944c441e2",
+        "android_client_info": {
+          "package_name": "com.set.budget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689930648007-7e1ajan6edlut9a3jvk12jh19f6saq3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFSNXToH4zrdquuPKNy1wORmIOYwgpikU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689930648007-7e1ajan6edlut9a3jvk12jh19f6saq3v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "689930648007-b60pa0f6lbubhbjid9bagg52gucl09p1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.set.budget"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
