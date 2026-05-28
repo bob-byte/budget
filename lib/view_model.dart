@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/app_dialogs.dart';
 import 'package:budget/components/open_sans.dart';
 import 'package:budget/components/text_form.dart';
@@ -163,7 +164,7 @@ class ViewModel extends ChangeNotifier {
         contentPadding: EdgeInsets.all(32),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: BorderSide(width: 1, color: Colors.black),
+          side: BorderSide(width: 1, color: AppColors.secondaryColor),
         ),
         title: Form(
           key: formKey,
@@ -225,12 +226,16 @@ class ViewModel extends ChangeNotifier {
                 }
               }
             },
-            splashColor: Colors.grey,
-            color: Colors.black,
+            splashColor: AppColors.splashColor,
+            color: AppColors.secondaryColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-            child: OpenSans(text: "Save", size: 15, color: Colors.white),
+            child: OpenSans(
+              text: "Save",
+              size: 15,
+              color: AppColors.primaryColor,
+            ),
           ),
         ],
       ),
@@ -249,7 +254,7 @@ class ViewModel extends ChangeNotifier {
         contentPadding: EdgeInsets.all(32),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: BorderSide(width: 1, color: Colors.black),
+          side: BorderSide(width: 1, color: AppColors.secondaryColor),
         ),
         title: Form(
           key: formKey,
@@ -311,12 +316,16 @@ class ViewModel extends ChangeNotifier {
                 }
               }
             },
-            splashColor: Colors.grey,
-            color: Colors.black,
+            splashColor: AppColors.splashColor,
+            color: AppColors.secondaryColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-            child: OpenSans(text: "Save", size: 15, color: Colors.white),
+            child: OpenSans(
+              text: "Save",
+              size: 15,
+              color: AppColors.primaryColor,
+            ),
           ),
         ],
       ),

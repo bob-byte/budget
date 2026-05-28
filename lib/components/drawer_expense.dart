@@ -1,3 +1,4 @@
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/open_sans.dart';
 import 'package:budget/view_model.dart';
 import 'package:flutter/material.dart';
@@ -22,11 +23,11 @@ class DrawerExpense extends HookConsumerWidget {
             child: Container(
               decoration: BoxDecoration(
                 shape: .circle,
-                border: Border.all(color: Colors.black, width: 1),
+                border: Border.all(color: AppColors.secondaryColor, width: 1),
               ),
               child: CircleAvatar(
                 radius: 180,
-                backgroundColor: Colors.white,
+                backgroundColor: AppColors.primaryColor,
                 child: Image(
                   height: 100,
                   image: AssetImage("assets/logo.png"),
@@ -40,14 +41,18 @@ class DrawerExpense extends HookConsumerWidget {
             onPressed: () async {
               await viewModelProvider.logout();
             },
-            color: Colors.black,
+            color: AppColors.secondaryColor,
             height: 50,
             minWidth: 200,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(5),
             ),
             elevation: 20,
-            child: OpenSans(text: "Logout", size: 20, color: Colors.white),
+            child: OpenSans(
+              text: "Logout",
+              size: 20,
+              color: AppColors.primaryColor,
+            ),
           ),
           SizedBox(height: 20),
           Row(

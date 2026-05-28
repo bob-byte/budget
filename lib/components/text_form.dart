@@ -1,3 +1,4 @@
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/open_sans.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -38,19 +39,22 @@ class TextForm extends StatelessWidget {
             controller: controller,
             decoration: InputDecoration(
               errorBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.red),
+                borderSide: BorderSide(color: AppColors.errorColor),
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               focusedErrorBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.red),
+                borderSide: BorderSide(color: AppColors.errorColor),
                 borderRadius: BorderRadius.all(Radius.circular(15)),
               ),
               enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.teal),
+                borderSide: BorderSide(color: AppColors.accentColor),
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.tealAccent, width: 2),
+                borderSide: BorderSide(
+                  color: AppColors.tealAccentColor,
+                  width: 2,
+                ),
                 borderRadius: BorderRadius.all(Radius.circular(15)),
               ),
               hintText: hintText,

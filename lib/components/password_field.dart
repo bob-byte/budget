@@ -1,3 +1,4 @@
+import 'package:budget/app_colors.dart';
 import 'package:budget/view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -25,7 +26,7 @@ class PasswordField extends HookConsumerWidget {
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
           hintText: "Password",
-          hintStyle: const TextStyle(color: Colors.grey),
+          hintStyle: const TextStyle(color: AppColors.hintColor),
           prefixIcon: IconButton(
             onPressed: () {
               viewModelProvider.toggleObscure();
@@ -34,7 +35,7 @@ class PasswordField extends HookConsumerWidget {
               viewModelProvider.isObscure
                   ? Icons.visibility
                   : Icons.visibility_off,
-              color: Colors.black,
+              color: AppColors.secondaryColor,
               size: 30,
             ),
           ),

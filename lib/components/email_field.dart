@@ -1,3 +1,4 @@
+import 'package:budget/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -22,8 +23,12 @@ class EmailField extends HookConsumerWidget {
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
           hintText: "Email",
-          hintStyle: TextStyle(color: Colors.grey),
-          prefixIcon: Icon(Icons.email, color: Colors.black, size: 30),
+          hintStyle: TextStyle(color: AppColors.hintColor),
+          prefixIcon: Icon(
+            Icons.email,
+            color: AppColors.secondaryColor,
+            size: 30,
+          ),
         ),
       ),
     );

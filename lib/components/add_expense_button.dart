@@ -1,3 +1,4 @@
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/open_sans.dart';
 import 'package:budget/view_model.dart';
 import 'package:flutter/material.dart';
@@ -17,14 +18,18 @@ class AddExpenseButton extends HookConsumerWidget {
         onPressed: () async {
           await viewModelProvider.addExpense(context);
         },
-        splashColor: Colors.grey,
-        color: Colors.black,
+        splashColor: AppColors.splashColor,
+        color: AppColors.secondaryColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Row(
           mainAxisAlignment: .spaceEvenly,
           children: [
-            Icon(Icons.add, color: Colors.white),
-            OpenSans(text: "Add Expense", size: 17, color: Colors.white),
+            Icon(Icons.add, color: AppColors.primaryColor),
+            OpenSans(
+              text: "Add Expense",
+              size: 17,
+              color: AppColors.primaryColor,
+            ),
           ],
         ),
       ),

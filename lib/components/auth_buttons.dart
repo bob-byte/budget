@@ -25,8 +25,8 @@ class AuthButtons extends HookConsumerWidget {
               height: 50,
               width: 150,
               child: MaterialButton(
-                splashColor: Colors.grey,
-                color: Colors.black,
+                splashColor: AppColors.splashColor,
+                color: AppColors.secondaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -40,7 +40,7 @@ class AuthButtons extends HookConsumerWidget {
                 child: OpenSans(
                   text: "Register",
                   size: 25,
-                  color: Colors.white,
+                  color: AppColors.primaryColor,
                 ),
               ),
             ),
@@ -59,7 +59,7 @@ class AuthButtons extends HookConsumerWidget {
               width: 150,
               height: 50,
               child: MaterialButton(
-                splashColor: Colors.grey,
+                splashColor: AppColors.splashColor,
                 color: AppColors.secondaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -86,7 +86,7 @@ class AuthButtons extends HookConsumerWidget {
         SignInButton(
           buttonType: .google,
           btnColor: AppColors.secondaryColor,
-          btnTextColor: Colors.white,
+          btnTextColor: AppColors.primaryColor,
           buttonSize: .medium,
           onPressed: () async {
             if (kIsWeb) {

@@ -1,3 +1,4 @@
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/poppins.dart';
 import 'package:budget/view_model.dart';
 import 'package:flutter/material.dart';
@@ -18,14 +19,30 @@ class TotalCalculations extends HookConsumerWidget {
           mainAxisAlignment: .spaceEvenly,
           crossAxisAlignment: .start,
           children: [
-            Poppins(text: "Budget left", size: size, color: Colors.white),
-            Poppins(text: "Total expense", size: size, color: Colors.white),
-            Poppins(text: "Total income", size: size, color: Colors.white),
+            Poppins(
+              text: "Budget left",
+              size: size,
+              color: AppColors.primaryColor,
+            ),
+            Poppins(
+              text: "Total expense",
+              size: size,
+              color: AppColors.primaryColor,
+            ),
+            Poppins(
+              text: "Total income",
+              size: size,
+              color: AppColors.primaryColor,
+            ),
           ],
         ),
         RotatedBox(
           quarterTurns: 1,
-          child: Divider(indent: 40, endIndent: 40, color: Colors.grey),
+          child: Divider(
+            indent: 40,
+            endIndent: 40,
+            color: AppColors.splashColor,
+          ),
         ),
         Column(
           mainAxisAlignment: .spaceEvenly,
@@ -34,17 +51,17 @@ class TotalCalculations extends HookConsumerWidget {
             Poppins(
               text: viewModelProvider.budgetLeft.toString(),
               size: size,
-              color: Colors.white,
+              color: AppColors.primaryColor,
             ),
             Poppins(
               text: viewModelProvider.totalExpense.toString(),
               size: size,
-              color: Colors.white,
+              color: AppColors.primaryColor,
             ),
             Poppins(
               text: viewModelProvider.totalIncome.toString(),
               size: size,
-              color: Colors.white,
+              color: AppColors.primaryColor,
             ),
           ],
         ),

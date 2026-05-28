@@ -7,9 +7,7 @@ import 'package:budget/components/poppins.dart';
 import 'package:budget/components/total_calculations.dart';
 import 'package:budget/view_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 bool isLoading = true;
 
@@ -19,7 +17,6 @@ class ExpensiveViewMobile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final viewModelProvider = ref.watch(viewModel);
-    final double deviceHeight = MediaQuery.of(context).size.height;
     final double deviceWidth = MediaQuery.of(context).size.width;
 
     if (isLoading) {
@@ -31,7 +28,7 @@ class ExpensiveViewMobile extends HookConsumerWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          iconTheme: IconThemeData(color: Colors.white, size: 30),
+          iconTheme: IconThemeData(color: AppColors.primaryColor, size: 30),
           backgroundColor: AppColors.secondaryColor,
           centerTitle: true,
           title: Poppins(
@@ -92,7 +89,10 @@ class ExpensiveViewMobile extends HookConsumerWidget {
                         width: 180,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(15)),
-                          border: Border.all(width: 1, color: Colors.black),
+                          border: Border.all(
+                            width: 1,
+                            color: AppColors.secondaryColor,
+                          ),
                         ),
                         child: ListView.builder(
                           itemCount: viewModelProvider.expenses.length,
@@ -130,7 +130,10 @@ class ExpensiveViewMobile extends HookConsumerWidget {
                         width: 180,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(15)),
-                          border: Border.all(width: 1, color: Colors.black),
+                          border: Border.all(
+                            width: 1,
+                            color: AppColors.secondaryColor,
+                          ),
                         ),
                         child: ListView.builder(
                           itemCount: viewModelProvider.incomes.length,
