@@ -1,4 +1,4 @@
-import 'package:budget/app_constants.dart';
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/sans_bold.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,7 @@ class AppDialogs {
           title: SansBold(text: title, size: 20),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
-            side: BorderSide(color: AppConstants.primaryColor, width: 2),
+            side: BorderSide(color: AppColors.primaryColor, width: 2),
           ),
           content: Text(content),
           actions: [
@@ -26,7 +26,7 @@ class AppDialogs {
               child: SansBold(
                 text: "OK",
                 size: 16,
-                textColor: AppConstants.secondaryColor,
+                textColor: AppColors.secondaryColor,
               ),
             ),
           ],
@@ -46,7 +46,7 @@ class AppDialogs {
           title: SansBold(text: "Error", size: 20),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
-            side: BorderSide(color: AppConstants.errorColor, width: 2),
+            side: BorderSide(color: AppColors.errorColor, width: 2),
           ),
           content: Text(content),
           actions: [
@@ -57,7 +57,7 @@ class AppDialogs {
               child: SansBold(
                 text: "OK",
                 size: 16,
-                textColor: AppConstants.secondaryColor,
+                textColor: AppColors.secondaryColor,
               ),
             ),
           ],

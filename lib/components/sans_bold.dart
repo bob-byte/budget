@@ -1,4 +1,4 @@
-import 'package:budget/app_constants.dart';
+import 'package:budget/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -13,7 +13,7 @@ class SansBold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: GoogleFonts.openSans(fontSize: size, fontWeight: .bold, color: textColor ?? AppConstants.secondaryColor),
+      style: GoogleFonts.openSans(fontSize: size, fontWeight: .bold, color: textColor ?? AppColors.secondaryColor),
     );
   }
 }

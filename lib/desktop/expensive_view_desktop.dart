@@ -1,4 +1,4 @@
-import 'package:budget/app_constants.dart';
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/add_expense_button.dart';
 import 'package:budget/components/add_income_button.dart';
 import 'package:budget/components/drawer_expense.dart';

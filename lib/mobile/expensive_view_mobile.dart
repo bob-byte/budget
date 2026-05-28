@@ -1,4 +1,4 @@
-import 'package:budget/app_constants.dart';
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/add_expense_button.dart';
 import 'package:budget/components/add_income_button.dart';
 import 'package:budget/components/drawer_expense.dart';
@@ -32,12 +32,12 @@ class ExpensiveViewMobile extends HookConsumerWidget {
       child: Scaffold(
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.white, size: 30),
-          backgroundColor: AppConstants.secondaryColor,
+          backgroundColor: AppColors.secondaryColor,
           centerTitle: true,
           title: Poppins(
             text: "Dashboard",
             size: 20,
-            color: AppConstants.primaryColor,
+            color: AppColors.primaryColor,
           ),
           actions: [
             IconButton(
@@ -59,7 +59,7 @@ class ExpensiveViewMobile extends HookConsumerWidget {
                   width: deviceWidth / 1.5,
                   padding: EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    color: AppConstants.secondaryColor,
+                    color: AppColors.secondaryColor,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: TotalCalculations(size: 14),
@@ -107,8 +107,9 @@ class ExpensiveViewMobile extends HookConsumerWidget {
                                 Align(
                                   alignment: .centerRight,
                                   child: Poppins(
-                                    text:
-                                        viewModelProvider.expenses[index].amount,
+                                    text: viewModelProvider
+                                        .expenses[index]
+                                        .amount,
                                     size: 12,
                                   ),
                                 ),

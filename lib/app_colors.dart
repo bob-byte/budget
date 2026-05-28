@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AppConstants {
+class AppColors {
   // Private constructor prevents instantiation
-  AppConstants._();
+  AppColors._();
 
   // Color palette
   static const Color primaryColor = Colors.white;

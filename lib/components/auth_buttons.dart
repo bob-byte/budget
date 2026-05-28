@@ -1,4 +1,4 @@
-import 'package:budget/app_constants.dart';
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/email_field.dart';
 import 'package:budget/components/open_sans.dart';
 import 'package:budget/components/password_field.dart';
@@ -15,7 +15,7 @@ class AuthButtons extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ViewModel viewModelProvider = ref.watch(viewModel);
-    
+
     return Column(
       children: [
         Row(
@@ -49,7 +49,7 @@ class AuthButtons extends HookConsumerWidget {
               "Or ",
               style: GoogleFonts.pacifico(
                 fontSize: 25,
-                color: AppConstants.secondaryColor,
+                color: AppColors.secondaryColor,
               ),
             ),
             SizedBox(width: 20),
@@ -60,7 +60,7 @@ class AuthButtons extends HookConsumerWidget {
               height: 50,
               child: MaterialButton(
                 splashColor: Colors.grey,
-                color: AppConstants.secondaryColor,
+                color: AppColors.secondaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -74,7 +74,7 @@ class AuthButtons extends HookConsumerWidget {
                 child: OpenSans(
                   text: "Login",
                   size: 25,
-                  color: AppConstants.surfaceColor,
+                  color: AppColors.surfaceColor,
                 ),
               ),
             ),
@@ -85,7 +85,7 @@ class AuthButtons extends HookConsumerWidget {
         //Google signin
         SignInButton(
           buttonType: .google,
-          btnColor: AppConstants.secondaryColor,
+          btnColor: AppColors.secondaryColor,
           btnTextColor: Colors.white,
           buttonSize: .medium,
           onPressed: () async {

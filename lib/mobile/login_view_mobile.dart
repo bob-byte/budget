@@ -1,4 +1,4 @@
-import 'package:budget/app_constants.dart';
+import 'package:budget/app_colors.dart';
 import 'package:budget/components/auth_buttons.dart';
 import 'package:budget/components/email_field.dart';
 import 'package:budget/components/open_sans.dart';
