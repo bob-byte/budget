@@ -2,6 +2,10 @@
 
 A Flutter budget tracking app with Firebase authentication and Firestore data storage.
 
+## Published Web App
+
+- Production URL: [https://budget-app-1111.web.app](https://budget-app-1111.web.app)
+
 ## Tech Stack
 
 - Flutter (Dart)
@@ -44,6 +48,9 @@ flutter test
 
 # build web
 flutter build web
+
+# deploy web to Firebase Hosting
+firebase deploy --only hosting
 
 # build apk
 flutter build apk
