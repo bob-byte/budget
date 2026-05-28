@@ -17,7 +17,7 @@ class ResponsiveHandler extends HookConsumerWidget {
     if (viewModelProvider.isSignedIn == true) {
       return LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth > 600) {
+          if (constraints.maxWidth > 800) {
             return ExpensiveViewDesktop();
           } else {
             return ExpensiveViewMobile();
@@ -27,7 +27,7 @@ class ResponsiveHandler extends HookConsumerWidget {
     } else {
       return LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth > 600) {
+          if (constraints.maxWidth > 700) {
             return LoginViewDesktop();
           } else {
             return LoginViewMobile();
