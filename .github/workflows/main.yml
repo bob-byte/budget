@@ -82,7 +82,7 @@ jobs:
           name: web-app
           path: build/web
 
-  build_android:
+  build_ios:
     name: Build iOS
     runs-on: macos-latest
     steps:
